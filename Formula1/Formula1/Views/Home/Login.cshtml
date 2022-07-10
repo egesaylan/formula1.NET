@@ -1,0 +1,59 @@
+﻿@using Formula1.Entities.ValueObjects
+@model LoginViewMdl
+
+@{
+    ViewBag.Title = "Login Page";
+}
+
+    <link href="~/Content/Login-SignUp.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    @using (Html.BeginForm()) { 
+
+     <section class="login-info">
+        <div class="container">
+            <div class="row main">
+                <div class="form-header">
+                    <h1 class="text-center ">Login Form </h1>
+                </div>
+                <div class="main-content">
+
+                    @Html.ValidationSummary(false)
+
+                    @if(ViewBag.SetLink != null)
+                    {
+                    <a href="@ViewBag.SetLink" class="btn btn-success">Wait For Admin To activate your account</a>
+                    }
+
+                    <div class="input-group ">
+                        <span class="input-group-addon"><span class="fa fa-user" aria-hidden="true"></span></span>
+                        @Html.TextBoxFor(model => model.Username, new { @class = "form-control", placeholder = "Username" })
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><span class="fa fa-lock" aria-hidden="true"></span></span>
+                        @Html.TextBoxFor(model => model.Password, new { @class = "form-control", placeholder = "Password", type = "password" })
+                    </div>
+
+                    <div class="form-group ">
+                        <button type="submit" class="btn btn-success btn-lg btn-block login-button">Login</button>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+     </section>
+  }
+
+
+<script>
+
+    $(function () {
+
+     $("footer").parent().hide();
+
+    });
+
+</script>
+

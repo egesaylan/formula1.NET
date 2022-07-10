@@ -1,0 +1,6 @@
+C:\Users\Ege\source\repos\Formula1\Formula1.Common\bin\Debug\Formula1.Common.dll
+C:\Users\Ege\source\repos\Formula1\Formula1.Common\bin\Debug\Formula1.Common.pdb
+C:\Users\Ege\source\repos\Formula1\Formula1.Common\obj\Debug\Formula1.Common.csprojAssemblyReference.cache
+C:\Users\Ege\source\repos\Formula1\Formula1.Common\obj\Debug\Formula1.Common.csproj.CoreCompileInputs.cache
+C:\Users\Ege\source\repos\Formula1\Formula1.Common\obj\Debug\Formula1.Common.dll
+C:\Users\Ege\source\repos\Formula1\Formula1.Common\obj\Debug\Formula1.Common.pdb

@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Register is Successful";
+}
+
+<link href="~/Content/Login-SignUp.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <section class="login-info">
+        <div class="container">
+            <div class="row main">
+                <div class="form-header">
+                    <h1 class="text-center ">Redirecting.... </h1>
+                </div>
+                <div class="main-content">
+                    <div class="text-success">
+                        <h2><span class="fa fa-check"></span>&nbsp;&nbsp;&nbsp;Registeration Is Successful...</h2>
+                        <hr />
+                        <p class="text-justify">
+                            Please click the link that we sent to your e-mail to activate your account.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<script>
+
+    $(function () {
+
+     $("footer").parent().hide();
+
+        setTimeout(function () {
+            window.location = "/Home/Index";
+        }, 6000);
+    });
+
+</script>
+

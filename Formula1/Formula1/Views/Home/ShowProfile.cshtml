@@ -1,0 +1,59 @@
+﻿@using Formula1.Entities
+@model Formula1User
+@{
+    ViewBag.Title = "User Profile";
+}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <div class="container">
+        <div class="row">
+            <h2>@ViewBag.Title</h2>
+            <hr />
+
+        </div>
+
+    
+
+    <div class="row">
+
+        <div class="col-md-2">
+            <img src="~/Images/@Model.PP" class="img-circle" width="128" height="128" />
+        </div>
+
+        <div class="col-md-8">
+            <h3>@(Model.Name + " " + Model.Surname)</h3>
+            <br />
+            <h6><b>Username: </b> @Model.Username</h6>
+            <h6><b>Email: </b> @Model.Email</h6>
+            <br />
+        </div>
+
+        <div class="col-md-2 text-right">
+            <div class="btn-group">
+                <a class="btn dropdown-toggle btn-info" data-toggle="dropdown" href="#">
+                    <span class="fa fa-cog">&nbsp;</span>
+                    Options
+                    <span class="icon-cog icon-white"></span><span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="@Url.Action("EditProfile")">
+                            <span class="fa fa-edit">&nbsp;</span>
+                            Modify
+                        </a>
+                    </li>
+                    <li><a href="@Url.Action("RemoveProfile")" onclick="return confirm('Are you Sure?');"><span class="fa fa-trash">&nbsp;</span>Delete</a></li>
+                </ul>
+             </div>
+        </div>
+    </div>
+ </div>  
+
+    <script>
+
+        $(function () {
+
+            $("footer").parent().hide();
+
+        });
+
+    </script>
